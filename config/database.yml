@@ -1,0 +1,26 @@
+:default: &default
+  :adapter: postgresql
+  :encoding: unicode
+  # adapter: mysql2
+  # encoding: utf8
+  # socket: /tmp/mysql.sock
+  :pool: 5
+
+:production:
+  <<: *default
+  :database: sample_db
+  :username: <%= ENV['SAMPLE_DB_USER'] %>
+  :password: <%= ENV['SAMPLE_DB_PASSWORD'] %>
+  :port: <%= ENV['SAMPLE_DB_PORT'] %>
+
+:development:
+  <<: *default
+  :database: sample_db_development
+  :port: 5432
+  :host: localhost
+
+:test:
+  <<: *default
+  :database: sample_db_test
+  :port: 5432
+  :host: localhost

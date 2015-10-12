@@ -1,0 +1,8 @@
+#!/bin/bash
+db_engine = $1
+
+if [ $db_engine == 'postgresql' ] ; then
+
+else if [ $db_engine == 'mysql' ] ; then
+
+fi

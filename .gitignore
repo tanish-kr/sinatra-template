@@ -1,0 +1,6 @@
+/.bundle
+/log/*
+!/log/.gitkeep
+/tmp/*
+!/tmp/.gitkeep
+.rbenv-gemsets
