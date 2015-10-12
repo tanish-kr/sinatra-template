@@ -5,6 +5,7 @@
 ```bash
 $ git clone git@github.com:tatsu07/sinatra-template.git
 $ bundle
+$ ./bin/unicorn_start # bundle exec foreman start
 ```
 
 ## Use Case
